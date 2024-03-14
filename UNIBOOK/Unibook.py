@@ -8,11 +8,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-# login = "rashad.xeyirxabarli"
-# password = "mynameW0"
-
-login = "zivar.mammadli"
-password = "Ziver311"
+login = input("Username Daxil edin: ")
+password = input("Shifreni Daxil edin: ")
 
 # Path to your Chromedriver executable
 options = Options()
@@ -120,7 +117,7 @@ if all_dfs:
     # print(final_df)
 
     # Write the final DataFrame to an Excel file
-    final_df.to_excel('Zivar.xlsx', index=False)
+    final_df.to_excel('Results.xlsx', index=False)
     print(final_df)
     
     print("Data saved successfully to the Excel file!")
